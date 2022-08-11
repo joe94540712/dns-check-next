@@ -1,8 +1,8 @@
 const { v4, v6 } = $network;
 
 let errorMessage = {
-  title: 'Customize DNS',
-  content: '無使用Personal DNS',
+  title: 'NextDNS',
+  content: '無使用 NextDNS',
   icon: 'xmark.shield.fill',
   'icon-color': '#FE6245',
 };
