@@ -18,12 +18,12 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
   errorMessage.content = '\n錯誤：未連上網路';
   $done(errorMessage);
 } else {
-  $httpClient.get('https://check.joe.dns', function (error, response, data) {
+  $httpClient.get('https://test.nextdns.io/', function (error, response, data) {
     if (error) {
       errorMessage.content += '\n錯誤：' + error;
       $done(errorMessage);
     }
-    if (data.includes('"status": "unconfigured"')) {
+    if (data.includes('"status": "ok"')) {
       $done(successMessage);
     }
     $done(errorMessage);
