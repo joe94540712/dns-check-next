@@ -18,7 +18,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
   errorMessage.content = '\n錯誤：未連上網路';
   $done(errorMessage);
 } else {
-  $httpClient.get('https://test.nextdns.io/', function (error, response, data) {
+  $httpClient.get('https://cbqrtgj4jfqdlilhaqa0.test.nextdns.io/', function (error, response, data) {
     if (error) {
       errorMessage.content += '\n錯誤：' + error;
       $done(errorMessage);
